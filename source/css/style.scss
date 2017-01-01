@@ -18,11 +18,15 @@
 .sans-font { font-family: $sans-font; }
 .serif-font { font-family: $serif-font; }
 
+.elr-row > div {
+    padding: 5px;
+}
+
 .grid-item {
     background-color: $teal;
     height: 50px;
     color: $white;
-    margin-bottom: 5px;
+    width: 100%;
     text-align: center;
     line-height: 50px;
 }

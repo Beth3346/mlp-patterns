@@ -1511,10 +1511,13 @@ button {
 .serif-font {
   font-family: "Roboto Slab", serif; }
 
+.elr-row > div {
+  padding: 5px; }
+
 .grid-item {
   background-color: #4ecdc4;
   height: 50px;
   color: #fff;
-  margin-bottom: 5px;
+  width: 100%;
   text-align: center;
   line-height: 50px; }
