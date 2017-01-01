@@ -1,0 +1,28 @@
+@import 'node_modules/elr-sass-utilities/main';
+@import 'config';
+
+@include elr-reset;
+@include elr-base;
+@include elr-grid(
+    $config: (
+        max-width: 1200px,
+        responsive-container: false
+    )
+);
+@include elr-helper-classes;
+@include elr-action-helper-classes;
+@import 'pattern-scaffolding';
+
+.elr-light { font-weight: 300; }
+.elr-black { font-weight: 900; }
+.sans-font { font-family: $sans-font; }
+.serif-font { font-family: $serif-font; }
+
+.grid-item {
+    background-color: $teal;
+    height: 50px;
+    color: $white;
+    margin-bottom: 5px;
+    text-align: center;
+    line-height: 50px;
+}
