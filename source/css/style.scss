@@ -30,3 +30,39 @@
     text-align: center;
     line-height: 50px;
 }
+
+.section-header {
+    @include elr-heading-shortline(
+        $config: (
+            bdr-color: $light-teal,
+            width: 200px
+        )
+    );
+    text-transform: uppercase;
+    padding-bottom: 50px;
+
+    &::after {
+        margin: auto;
+        position: relative;
+        top: 10px;
+    }
+}
+
+.section-subheading,
+.section-heading {
+    padding: 0;
+    margin: 0;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.section-subheading {
+    font-size: to-rems(16px);
+    font-weight: $bold;
+}
+
+.section-heading {
+    font-size: to-rems(30px);
+    font-weight: 900;
+}
