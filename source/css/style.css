@@ -4099,7 +4099,8 @@ button.elr-modal-open {
 .site-logo {
   font-size: 1.5rem; }
   .site-logo a {
-    color: #27343d; }
+    color: #27343d;
+    text-decoration: none; }
   .site-logo .elr-uppercase {
     font-size: 1.875rem;
     font-weight: 900;
