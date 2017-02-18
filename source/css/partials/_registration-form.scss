@@ -1,0 +1,27 @@
+.form-holder {
+    background-color: $light-teal;
+    border-radius: 5px;
+    max-width: 570px;
+    width: 100%;
+    margin: 10px auto;
+    padding: 30px 40px;
+}
+
+.form-heading {
+    font-size: to-rems(30px);
+    margin: 0;
+    padding: 0 0 20px;
+    color: $text-color;
+}
+
+// .registration-form {
+
+// }
+
+.form-legal {
+    font-size: to-rems(12px);
+    text-align: center;
+    color: $text-color;
+    padding: 10px 0 0;
+    margin: 0;
+}

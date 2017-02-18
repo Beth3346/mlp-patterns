@@ -1,0 +1,112 @@
+
+// scss-lint:disable NestingDepth
+
+.list-item-grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: space-between;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.card {
+    @include elr-card(
+        $config: (
+            bg-color: $white,
+            color: $dark-grey,
+            padding: 20px,
+            margin: 20px,
+            border-radius: 3px
+        )
+    );
+    min-width: 300px;
+    max-width: 400px;
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    .elr-card-inner {
+        height: auto;
+    }
+
+    .elr-card-title {
+        font-size: to-rems(30px);
+        font-weight: $extra-bold;
+        padding-bottom: 0;
+        color: $pink;
+
+        a {
+            color: $pink;
+
+            &:hover {
+                color: lighten($pink, 10%);
+            }
+        }
+    }
+
+    .elr-card-list-label {
+        color: $pink;
+    }
+
+    .elr-card-actions .elr-button,
+    .elr-card-actions form {
+        flex-basis: 50%;
+    }
+
+    .elr-card-actions .elr-button:only-of-type {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+
+    .elr-card-actions form:only-of-type {
+        margin-left: 10px;
+        margin-right: 0;
+    }
+
+    .card-item-header {
+        border-bottom: 1px solid $light-grey;
+        padding-bottom: 10px;
+    }
+
+    .item-header {
+        display: flex;
+    }
+
+    .item-stats,
+    .item-actions {
+        border-bottom: 1px solid $light-grey;
+        justify-content: space-between;
+        padding: 10px 0;
+    }
+
+    .item-action {
+        padding: 0;
+        min-width: 50px;
+        text-align: center;
+        color: $pink;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .fa {
+            font-size: to-rems(24px);
+        }
+
+        p {
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+    .item-stat,
+    .item-action {
+        width: (100% / 3);
+    }
+}
+
+.card-details {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

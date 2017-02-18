@@ -1,0 +1,38 @@
+
+// General Styles
+@include elr-reset;
+@include elr-base;
+@include elr-grid(
+    $config: (
+        max-width: 1200px,
+        responsive-container: false
+    )
+);
+@include elr-helper-classes;
+@include elr-action-helper-classes;
+
+.icon {
+    text-align: center;
+    font-size: 30px;
+    color: $pink;
+}
+
+.elr-light { font-weight: 300; }
+.elr-black { font-weight: 900; }
+.sans-font { font-family: $sans-font; }
+.serif-font { font-family: $serif-font; }
+
+.elr-row > div {
+    padding: 5px;
+}
+
+.grid-item {
+    background-color: $teal;
+    height: 50px;
+    color: $white;
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 3px;
+}
+

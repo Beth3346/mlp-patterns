@@ -76,14 +76,32 @@
   "pony": {
     "name": "Blue Belle"
   },
-  "listitems": {
-    "name": "Color",
-    "name": "Mold",
-    "name": "Country",
-    "name": "Pose",
-    "name": "Year",
-    "name": "Babies",
-    "name": "Newborns",
-    "name": "Males"
-  }
+  "listitems": [
+    { "name": "Color" },
+    { "name": "Mold" },
+    { "name": "Country" },
+    { "name": "Pose" },
+    { "name": "Year" },
+    { "name": "Babies" },
+    { "name": "Newborns" },
+    { "name": "Males" }
+  ],
+  "tabitems": {
+    "name": "Generation One"
+  },
+  "icons": [
+    { "name": "fa-heart" },
+    { "name": "fa-star" },
+    { "name": "fa-check-circle" },
+    { "name": "fa-heart-o" },
+    { "name": "fa-star-o" },
+    { "name": "fa-check-circle-o" }
+  ],
+  "icons-stats": [
+    { "name": "fa-plus" },
+    { "name": "fa-check-square-o" },
+    { "name": "fa-money" },
+    { "name": "fa-gift" },
+    { "name": "fa-heart" }
+  ]
 }
